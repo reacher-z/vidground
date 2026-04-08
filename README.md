@@ -7,17 +7,8 @@
 [![Project Page](https://img.shields.io/badge/Project-Page-blue)](http://vidground.etuagi.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-<p align="center">
-  <img src="assets/teaser.png" alt="VidGround teaser" width="720"/>
-</p>
-
 ## TL;DR
 Many "video" benchmarks and post-training datasets can be solved **without watching the video**. We show that **40–60%** of questions in commonly used long-video benchmarks are answerable from text alone, and that the same bias pervades widely used post-training datasets. Filtering down to *visually grounded* questions only — what we call **VidGround** — improves RL post-training by up to **+6.2 points** while using only **69.1%** of the original data.
-
-## Abstract
-It is critical for vision-language models (VLMs) to comprehensively understand visual, temporal, and textual cues. However, despite rapid progress in multimodal modeling, video understanding performance still lags behind text-based reasoning. In this work, we find that progress is even worse than previously assumed: commonly reported long video understanding benchmarks contain **40–60% of questions that can be answered using text cues alone**. Furthermore, we find that these issues are also pervasive in widely used post-training datasets, potentially undercutting the ability of post-training to improve VLM video understanding performance.
-
-Guided by this observation, we introduce **VidGround** as a simple yet effective solution: using only the actual visually grounded questions without any linguistic biases for post-training. When used in tandem with RL-based post-training algorithms, this simple technique improves performance by up to **6.2 points** relative to using the full dataset, while using only **69.1%** of the original post-training data. Moreover, we show that data curation with a simple post-training algorithm outperforms several more complex post-training techniques, highlighting that **data quality is a major bottleneck** for improving video understanding in VLMs.
 
 ## Key findings
 - 📉 **40–60%** of questions in popular long-video benchmarks are answerable from text alone.
@@ -32,7 +23,6 @@ vidground/
 ├── LICENSE
 ├── pyproject.toml
 ├── citation.bib
-├── assets/                        # figures used in README / project page
 ├── data/                          # dataset preparation instructions
 │   └── README.md
 ├── eval/                          # evaluation protocol notes
