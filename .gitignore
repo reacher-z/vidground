@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+
+# Data / checkpoints
+data/raw/
+data/filtered/
+checkpoints/
+*.ckpt
+*.pt
+*.bin
+*.safetensors
+
+# Logs
+logs/
+wandb/
+outputs/
+
+# Editors
+.vscode/
+.idea/
+.DS_Store

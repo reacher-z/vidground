@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vidground"
+version = "0.0.1"
+description = "VidGround: filtering visually grounded questions for VLM post-training."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+authors = [
+    { name = "Yuxuan Zhang et al." },
+]
+dependencies = [
+    # TODO: pin actual deps (transformers, torch, etc.)
+]
+
+[project.urls]
+"Project Page" = "http://vidground.etuagi.com"
+"Source"       = "https://github.com/TODO/vidground"
+
+[tool.setuptools.packages.find]
+where = ["src"]
